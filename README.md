@@ -2,7 +2,7 @@
  * @Author: 章红平
  * @Date: 2023-06-13 20:16:21
  * @LastEditors: 章红平
- * @LastEditTime: 2023-06-19 10:43:40
+ * @LastEditTime: 2023-06-20 15:55:54
  * @FilePath: \solidityByExample\README.md
  * @Description:
 -->
@@ -22,3 +22,8 @@ gas(gas相关)
 ifElse(ifElse条件语句)
 loop(for while 循环)
 mapping(映射)
+array(数组)
+structs(结构体)
+dataLocations( Storage, Memory , Calldata)
+function(函数)
+viewAndPure

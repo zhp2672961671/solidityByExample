@@ -5,7 +5,14 @@ pragma solidity ^0.8.17;
 /*
 Array可以具有编译时固定大小或动态大小。
 */
-
+// 声明 枚举
+enum Status {
+    Pending,
+    Shipped,
+    Accepted,
+    Rejected,
+    Canceled
+}
 contract Array {
     // 初始化数组的几种方法
     uint[] public arr;
