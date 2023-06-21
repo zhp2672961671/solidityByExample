@@ -2,7 +2,7 @@
  * @Author: 章红平
  * @Date: 2023-06-13 20:16:21
  * @LastEditors: 章红平
- * @LastEditTime: 2023-06-21 14:31:55
+ * @LastEditTime: 2023-06-21 18:12:08
  * @FilePath: \solidityByExample\README.md
  * @Description:
 -->
@@ -33,3 +33,6 @@ event(事件)
 constructor(构造函数)
 inheritance(继承)
 inheritedVariables(覆盖继承的状态变量)
+callParent(调用父合约)
+visibility(可访问性  public, private, internal, external)
+interface(接口)
