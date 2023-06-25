@@ -2,7 +2,7 @@
  * @Author: 章红平
  * @Date: 2023-06-13 20:16:21
  * @LastEditors: 章红平
- * @LastEditTime: 2023-06-25 17:18:08
+ * @LastEditTime: 2023-06-25 20:35:53
  * @FilePath: \solidityByExample\README.md
  * @Description:
 -->
@@ -38,3 +38,5 @@ visibility(可访问性  public, private, internal, external)
 interface(接口)
 payable(支付)
 sendEther(将以太币发送到其他合约)
+fallback(msg.data 不为空时调用回退函数)
+call(与其他合约交互的低级函数)
