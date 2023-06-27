@@ -6,8 +6,18 @@ pragma solidity ^0.8.17;
 Try Catch 只能捕获来自外部函数调用和合约创建的错误。
 
 */
+struct Point {
+    uint x;
+    uint y;
+}
 
+error Unauthorized(address caller);
+
+function add(uint x, uint y) pure returns (uint) {
+    return x + y;
+}
 contract Foo {
+    string public name = "Foo";
     address public owner;
     constructor(address _owner) {
         require(_owner != address(0), "invalid address");
