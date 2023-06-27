@@ -2,7 +2,7 @@
  * @Author: 章红平
  * @Date: 2023-06-13 20:16:21
  * @LastEditors: 章红平
- * @LastEditTime: 2023-06-25 20:35:53
+ * @LastEditTime: 2023-06-27 09:46:49
  * @FilePath: \solidityByExample\README.md
  * @Description:
 -->
@@ -40,3 +40,8 @@ payable(支付)
 sendEther(将以太币发送到其他合约)
 fallback(msg.data 不为空时调用回退函数)
 call(与其他合约交互的低级函数)
+delegatecall(类似于call的低级函数)
+functionSelector(函数选择器)
+callingOtherContract(调用其他合约)
+createdByOtherContracts(通过new 关键字创建合约)
+tryCatch(捕获来自外部函数调用和合约创建的错误)
