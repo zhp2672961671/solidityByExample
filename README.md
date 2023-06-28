@@ -2,7 +2,7 @@
  * @Author: 章红平
  * @Date: 2023-06-13 20:16:21
  * @LastEditors: 章红平
- * @LastEditTime: 2023-06-27 15:04:42
+ * @LastEditTime: 2023-06-28 09:44:53
  * @FilePath: \solidityByExample\README.md
  * @Description:
 -->
@@ -47,3 +47,7 @@ createdByOtherContracts(通过new 关键字创建合约)
 tryCatch(捕获来自外部函数调用和合约创建的错误)
 import(导入本地和外部文件)
 library(库)
+abiEncode
+abiDecode(编码何解码)
+keccak256(计算输入的 Keccak-256 哈希值。)
+verifyingSignature(签名验证)
