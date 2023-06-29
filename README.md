@@ -2,7 +2,7 @@
  * @Author: 章红平
  * @Date: 2023-06-13 20:16:21
  * @LastEditors: 章红平
- * @LastEditTime: 2023-06-28 09:44:53
+ * @LastEditTime: 2023-06-29 11:12:02
  * @FilePath: \solidityByExample\README.md
  * @Description:
 -->
@@ -51,3 +51,6 @@ abiEncode
 abiDecode(编码何解码)
 keccak256(计算输入的 Keccak-256 哈希值。)
 verifyingSignature(签名验证)
+gasSaving(gas优化)
+bitwiseOperators(位运算)
+uncheckedMath(数字溢出处理)
