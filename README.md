@@ -2,13 +2,14 @@
  * @Author: 章红平
  * @Date: 2023-06-13 20:16:21
  * @LastEditors: 章红平
- * @LastEditTime: 2023-06-29 15:40:50
+ * @LastEditTime: 2023-07-06 11:21:31
  * @FilePath: \solidityByExample\README.md
  * @Description:
 -->
 # solidityByExample
 
 Solidity学习
+https://solidity-by-example.org/
 
 helloWorld("你好，世界")
 fristApplication("第一个应用")
@@ -57,4 +58,7 @@ uncheckedMath(数字溢出处理)
 
 Applications(应用领域)
   etherWallet(钱包)
+  multi_SigWallet(多重签名钱包)
+  merkleTree(哈希树)
+  iterableMapping(可循环映射)
 

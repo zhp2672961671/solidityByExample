@@ -34,42 +34,47 @@ contract MultSigWallet {
         address to;
         uint value;
         bytes data;
+        // 是否执行
         bool executed;
+        // 确认数
         uint numConfirmations;
     }
      // mapping from tx index => owner => bool
      mapping(uint => mapping(address => bool)) public isConfirmed;
      Transaction[] public transactions;
-
+    // 拥有者验证
      modifier onlyOwner() {
          require(isOwner[msg.sender],"not owner");
          _;
      }
-
+    //  交易是否存在
      modifier txExists(uint _txIndex) {
          require(_txIndex < transactions.length, "tx does not exist" );
          _;
      }
-     
+    //是否未执行
      modifier notExecuted(uint _txIndex) {
          require(!transactions[_txIndex].executed,"tx already executed");
          _;
      }
-
+    // 是否未确认
      modifier notConfirmed(uint _txIndex) {
          require(!isConfirmed[_txIndex][msg.sender],"tx already confirmed");
          _;
      }
 
      constructor(address[] memory _owners, uint _numConfirmationsRequired) {
+        // 拥有者必须大于0
          require(_owners.length >0 ,"owners required");
+        //  需要确认num大于0,小于等于拥有者数量
          require(
-             _numConfirmationsRequired > 0 && 
+             _numConfirmationsRequired > 0 &&
              _numConfirmationsRequired <= _owners.length,
              "invalid number of required confirmations"
          );
          for (uint i = 0; i < _owners.length; i++){
          address owner = _owners[i];
+        // 排除自身
          require(owner != address(0), "invalid owner");
          isOwner[owner] = true;
          owners.push(owner);
@@ -96,7 +101,7 @@ contract MultSigWallet {
              })
          );
         emit SubmitTransaction(msg.sender, txIndex, _to, _value, _data);
-        
+
      }
     //确认交易
      function confirmTransaction(
@@ -138,7 +143,7 @@ contract MultSigWallet {
 
         emit RevokeConfirmation(msg.sender, _txIndex);
     }
-    
+
     function getOwners() public view returns (address[] memory) {
         return owners;
     }
@@ -172,3 +177,14 @@ contract MultSigWallet {
     }
 
 }
+// 这是一个测试从多重签名钱包发送交易的合约
+contract TestContract {
+    uint public i;
+    function callMe(uint j) public {
+        i += j;
+    }
+    function getData() public pure returns (bytes memory) {
+        return  abi.encodeWithSignature("callMe(uint256)", 123);
+    }
+}
+
