@@ -7,10 +7,8 @@
  * @Description:
 -->
 # solidityByExample
-
+#https://solidity-by-example.org/
 # Solidity学习
-# https://solidity-by-example.org/
-
 #helloWorld("你好，世界")
 #fristApplication("第一个应用")
 #primitiveDataTypes("原数据类型")
@@ -32,7 +30,7 @@
 #modifier(函数修改器)
 #event(事件)
 #constructor(构造函数)
-# inheritance(继承)
+#inheritance(继承)
 #inheritedVariables(覆盖继承的状态变量)
 #callParent(调用父合约)
 #visibility(可访问性  public, private, internal, external)
