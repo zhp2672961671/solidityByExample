@@ -2,7 +2,7 @@
  * @Author: 章红平
  * @Date: 2023-06-13 20:16:21
  * @LastEditors: 章红平
- * @LastEditTime: 2023-07-06 11:21:31
+ * @LastEditTime: 2023-07-20 11:40:54
  * @FilePath: \solidityByExample\README.md
  * @Description:
 -->
@@ -61,4 +61,7 @@ Applications(应用领域)
   multi_SigWallet(多重签名钱包)
   merkleTree(哈希树)
   iterableMapping(可循环映射)
+  erc20(同质代币标准)
+  erc721(非同质代币标准)
+
 
