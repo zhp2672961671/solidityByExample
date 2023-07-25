@@ -2,7 +2,7 @@
  * @Author: 章红平
  * @Date: 2023-06-13 20:16:21
  * @LastEditors: 章红平
- * @LastEditTime: 2023-07-20 13:35:41
+ * @LastEditTime: 2023-07-25 16:13:39
  * @FilePath: \solidityByExample\README.md
  * @Description:
 -->
@@ -60,4 +60,7 @@
     #multi_SigWallet(多重签名钱包)
     #merkleTree(哈希树)
     #iterableMapping(可循环映射)
+    #erc20(同质代币标准)
+    #erc721(非同质代币标准)
+    #upgradeableProxy(可升级代理合约)
 
