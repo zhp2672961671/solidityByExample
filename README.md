@@ -2,7 +2,7 @@
  * @Author: 章红平
  * @Date: 2023-06-13 20:16:21
  * @LastEditors: 章红平
- * @LastEditTime: 2023-07-25 16:13:39
+ * @LastEditTime: 2023-07-26 11:07:14
  * @FilePath: \solidityByExample\README.md
  * @Description:
 -->
@@ -63,4 +63,6 @@
     #erc20(同质代币标准)
     #erc721(非同质代币标准)
     #upgradeableProxy(可升级代理合约)
+
+# upgradability-solidity-demo(可升级的以太坊智能合约设计模式)
 
